@@ -1,12 +1,12 @@
 {
     "name": "monster-logger",
-    "version": "0.0.23",
+    "version": "0.0.25",
     "description": "helps console.log items",
     "types": "index.d.ts",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "tsc && node src/postBuild.js && cd dist && npm publish --access=public"
+        "build": "tsc && node src/postBuild.js && cd dist && npm publish --access=public && cd .. && git add . && git commit -a --allow-empty-message -m \"\" && git push origin main"
     },
     "author": "",
     "license": "MIT",
